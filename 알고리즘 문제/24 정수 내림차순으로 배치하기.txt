@@ -1,0 +1,5 @@
+function solution(n) {
+    let result = n.toString().split("").sort().reverse().join("");
+                //문자열변환,문자마다배열나눔,작은거부터정렬,정렬역순,나눈배열합치기
+    return parseInt(result);}
+           // 문자열을 실수로 바꿈

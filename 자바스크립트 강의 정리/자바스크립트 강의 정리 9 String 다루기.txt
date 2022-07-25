@@ -1,0 +1,50 @@
+String 다루기
+특정 위치의 문자열 알아내기
+
+.charAt 함수 이용
+첫 문자 : str.charAt(0)  //a
+마지막 문자 : str.charAt(str.length-1) //e
+
+var str="abcdeabcde"
+str.charAt(10)  // "" //  str의 문자열이 0~9번까지 열개밖에존재하지않아 
+                          //  10번 11번째의 문자가 존재하지 않기 때문에 없는걸로 출력이된다
+str.charAt(-1)  // "" //  위와 마찬가지로 -1번의 문자가 없기때문에 없는걸로 출력된다
+
+대괄호([]) 사용
+첫 문자 : str[0]
+마지막 문자 : str[str.length-1]
+
+str[10]; // undefined가 출력됨
+
+
+
+부분문자열 구하기
+문자열의 연속된 일부분을 구하는 함수
+
+.substring(pos1, pos2) : pos1 에서 pos2까지의 부분 문자열 반환
+pos2 생략시 pos1에서부터 마지막 까지의 문자열 반환
+
+str.substring(2,4); //"cd" 배열 세번째 2의위치부터 
+                       //다섯번째4의위치 전까지 출력한다
+
+substr(pos, length) : pos에서 length길이 만큼의 부분 문자열 반환
+
+str.substr(2,4); // 세번째 2의 위치에서부터 배열길이 4개를 출력한다
+                    //  "cdea"
+str.substring(2);  //"cdeabcde"
+str.substr(2);      //둘다 세번째 2번위치의 문자부터 끝까지 출력된다
+
+str.substr(-7);     // 마지막 부터 앞으로 7자리까지 출력
+                      // "deabcde"
+str.substr(-7,2);  // "de" 길이를 제한하여 출력가능
+
+
+length 생략시, pos에서 마지막까지의 문자열 반환
+pos 가 음수인 경우, str.length - pos 로 동작
+
+
+문자열 검색하기
+str.indexOf("bc"); //1  // 두번째 1의 위치에 첫글자가 있으므로 1이출력된다
+str.lastIndexOf("bc"); //6 //7번째 6의 위치에 첫글자가 있으므로 6이 출력된다
+indexOf(str) :   
+lastIndexOf(str) :

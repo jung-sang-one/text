@@ -1,0 +1,31 @@
+for (변수 of 객체){
+객체의 모든 열거할수잇는 프로퍼티의 개수만큼 반복적으로 실행하고자 하는 실행문
+iterable objects
+in 은 반복되지않는 배열값에 변수를대입  객체의 반복에 사용
+  <script>
+    var arr = [3, 4, 5];
+
+    for (var i = 0; i < arr.length; i++) { // 배열 arr의 모든 요소의 인덱스(index)를 출력함.
+      document.write(i + " ");
+    }
+    document.write("<br>");
+
+    for (var i in arr) { // 위와 같은 동작을 하는 for / in 문
+      document.write(i + " ");
+    }
+  </script> // 출력은 012
+
+of는 반복되는 구간마 객체에 셀수있는 값을 지정된 변수에 대입하는것 배열의 반복에 사용
+반복되는값을출력
+  <script>
+    var arr = [3, 4, 5];
+
+    for (var i = 0; i < arr.length; i++) { // 배열 arr의 모든 요소의 인덱스(index)를 출력함.
+      document.write(arr[i] + " ");
+    }
+    document.write("<br>");
+
+    for (var value of arr) { // 위와 같은 동작을 하는 for / of 문
+      document.write(value + " ");
+    }
+  </script> //출력은 345

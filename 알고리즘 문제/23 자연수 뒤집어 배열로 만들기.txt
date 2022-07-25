@@ -1,0 +1,19 @@
+function solution(n) {
+    return String(n).split('').reverse().map(o => o = parseInt(o));}
+//문자열로 변환한다움 문자마다 배열하고 배열을 역순으로 
+ //정렬하는데 역순으로 정렬한것을 첫배열 부터 나열하는데 숫자타입으로 나열한다 
+//
+
+map(x=> y=z(x))
+x를 배열하는데 y의 타입을 z로한다
+map(x=> x*2)
+x를 배열하는데 y에 2를 곱하고 배열한다
+
+ex)
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]

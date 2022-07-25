@@ -1,0 +1,6 @@
+function solution(price, money, count) {
+    const tmp = price * count *     //이용가격을 몇번 탈것이며 몇명이서 탈것인지를
+          (count + 1) / 2 - money;  //연산해서 나온값을 내가 가진돈 머니로 계산하고 
+    return tmp > 0 ? tmp : 0;       // 남은 값을 탭이라고 햇을때 탬이 0보다 크면 
+                                    // 그대로 출력하고 아니라면 0 으로 출력하라
+}

@@ -1,0 +1,10 @@
+const 인의반복 = "forin";
+
+for (let i in 인의반복) {
+  console.log(i);
+}
+const 오브의반복 = "forof";
+
+for (let i of 오브의반복) {
+  console.log(i);
+}

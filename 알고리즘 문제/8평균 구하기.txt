@@ -1,0 +1,7 @@
+function solution(arr) {
+    var answer = 0;
+    let a = 0;
+    for (let i = 0; i <arr.length; i++){;      //i의 배열을 arr의 배열만큼 구성하고 
+         a+=arr[i];}                           //arr 의 배열마다의 값을 a에 합산하여 초기화 하고
+    return answer = a/arr.length;              //그것을 다시 arr의 배열갯수만큼 나눈값을 앤써에 초기화한다
+}

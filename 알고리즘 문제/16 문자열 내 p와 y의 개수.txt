@@ -1,0 +1,14 @@
+function solution(s){                        
+    let a = s.toLowerCase();                // s값의 문자열을 모두 소문자로 변환해주고
+
+ let check_p = a.split("p").length;         // 변환한 a값의 문자열에 있는 p의 배열 갯수와
+
+ let check_y = a.split("y").length;          // 변환한 a값의 문자열에 있는 y의 배열 갯수를 구해서
+
+ var answer =  check_p == check_y ? true : false; //갯수가 같다면  투르 다르다면 포스를 출력한다
+
+    
+
+ return answer
+
+}

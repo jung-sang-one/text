@@ -1,0 +1,7 @@
+SyntaxError: missing
+-SyntaxError-문법 오류
+is not function
+-function 이라는 함수를 사용하려고하니 안에 코드가 이상하다
+
+ReferenceError: '' is not defined
+스크립트 태그가 이상하다

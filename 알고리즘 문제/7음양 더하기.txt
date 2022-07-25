@@ -1,0 +1,13 @@
+function solution(absolutes, signs) {
+    let answer = 0;
+    for (let i = 0; i < absolutes.length; i++) {      //i의값을 정수 0으로 지정하고 i는 
+                                                      //앱솔루트의 배열값 보다 작을때까지 
+                                                      //i의 값을 배열마다 +1 해서 지정한다
+        if (signs[i] === true) {                      //사인스의 배열이 양수가 맞다면
+            answer = answer + absolutes[i];           // 앤써값에 해당 배열의 값을 +연산하고
+        } else {                                      // 아니라면 (음수라면)
+            answer = answer - absolutes[i];           // 앤써값에 해당 배열의 값을 -연산해라
+        }
+    }
+    return answer
+}

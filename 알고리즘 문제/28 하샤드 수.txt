@@ -1,0 +1,18 @@
+function solution(x) {
+    let answer = true;
+ 
+    let a1 = []
+    let num = String(x)
+ 
+    for(let i = 0; i < num.length; i++) {
+        a1.push(Number(num[i]));
+    }
+ 
+    let sum = a1.reduce((a, b) => (a + b))
+ 
+    if (!(x % sum === 0)) {
+        answer = false;
+    }
+ 
+    return answer;
+}

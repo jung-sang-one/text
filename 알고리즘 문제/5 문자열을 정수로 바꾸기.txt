@@ -1,0 +1,20 @@
+function solution(s) {
+
+//임의의값 s가 주어졋을때
+
+    var answer = 0;
+
+//answer은 0으로 설정하고
+
+    answer =+s
+
+//answer에 s를 더한다  
+    //answer이 정수이고 정수에 s값을 더하려고 하기에 
+
+    //s의 데이터를 정수로변환해서 연산한다
+
+    //=s+ 는 문자열로 인식되기에 answer(0s) 로 인식된다
+
+    return answer;
+
+}

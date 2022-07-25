@@ -1,0 +1,50 @@
+// function solution(arr1, arr2) {
+//     var answer = [[]];
+//     return answer;
+// }
+
+
+//  function solution(arr1, arr2) {
+// //임의의 arr1데이터와 arr2데이터 가 주어졋을때
+
+//  var answer = [];
+// //answer의 데이터는 []로 설정한다
+
+//  for(let i=0; i< arr1.length; i++){ //arr1=[1],[2]에서 arr1=[1,2][2.4]로 증감연산되다(정수끼리연산)
+
+// //i=i+1이반복하는데 i의 요소갯수가 arr1보다 크지않으므로 커지기전까지 반복한다
+// //변수 i를 선언하는데 i는 정수 0부터 시작해서 arr1의 갑과비교하여 커질 때까지 각각 증감연산한다
+
+//      let sum = [];
+// //sum의 데이터를 [] 설정하고
+
+//   for(let j=0; j<arr1[i].length; j++){ //i의 값은 그대로 두고 arr1의 다른 데이터[2]가 증감연산되어 
+//                                 //arr1=[1,2][2]가 arr1=[1,2][2,3]이된다
+// //변수 j 를 설정하는데 j는 0으로 성정하고 j가 arr1의i의 값은 그대로 두고 다른데이터의 값을 비교하여 
+// //커질때까지 각각 증감연산한다 
+
+//              sum.push(arr1[i][j] + arr2[i][j]) // [4,6],[7,9] 가된다
+//          }
+
+// //sum에 설정하는데 각각의 정해진 위치에 있는 정수끼리 더해서 해준다 
+// //sum은 []로 지정되어있는데 arr1과 arr2가 [] 두개가잇으므로 하나의[]가 증감되어 각각의 위치에 정수끼리 더한값이들어간다
+
+//         answer.push(sum) //push   {a.push(b)}는a(b)일때 {c.push(a)}일때 c(a(b))가된다
+//     }
+// //설정된 sum값을 다시 answer 의 정해진 위치의 데이터에 설정해준다
+
+//      return answer; 
+//  }
+ function solution(arr1, arr2) {
+     var answer = [];
+      for(let i=0; i< arr1.length; i++){
+          let sum = [];
+          for(let j=0; j<arr1[i].length; j++){
+              sum.push(arr1[i][j] + arr2[i][j])
+              // sum.push(arr1[i] + arr2[i])
+          }
+                 answer.push(sum)
+           }
+          return answer; 
+
+ }

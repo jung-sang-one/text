@@ -1,0 +1,7 @@
+
+function solution(n) {
+    return "수박".repeat(n).substring(0,n) // 수박이라는 문자열을 반복해서 나열할때
+
+                                               // 해당하는 위치의 n만큼 배열단어를 자르면 된다
+
+}

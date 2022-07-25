@@ -1,0 +1,49 @@
+선언 : 컴퓨터에게 변수를 사용할 것이라고 선언(알려주는) 역할
+ex) var = a;
+초기화 : 선언한 변수에 처음으로 값을 저장하는 과정
+변수에 값을 저장하는 법 : 대입연산자 (=) 를 활용
+콤마(,)를 활용해 여러 변수를 동시에 선언, 초기화 가능
+
+ex) a = 1;
+var = a = 1,2;
+
+console.log : 뒤에 따라오는 괄호 안에 들어있는 메시지를 콘솔창에 출력하는 명령어
+ex)console.log('HelloWorld');    //콘솔창에 HelloWorld 라고 출력됨
+
+promprt : 뒤에 따라오는 괄호 안에 들어있는 메세지를 사용자에게 보여주고, 문자열을 입력받는 명령
+변수에 값을 저장하는 구문과 함께 사용해서, 사용자가 입력한 값을 변수에 저장 가능
+
+alert : 뒤에 따라오는 괄호 안에 들어있는 메세지를 알럿창에 보여주는 기능
+
+ex) var name=prompt("이름을 입력해 주세요,");
+     console.log(name, "님 환영합니다.");
+라고 입력햇을때 실행하면 알럿창에 이름을 입력해달라는 창과 인풋창이 뜨고
+이름을 입력하면 콘솔창에 입력한 이름과 님 환영합니다가 연결되어 출력된다
+
+typeof : 자료형의 종류로 정수를 뜻한다
+ex)var n = 1;
+console.log( typeof(n)); 
+-number 이라는 값이 출련된다
+
+string : 문자열의 타입이다
+int : 자연수를 나타
+parseInt : 뒤에 따라오는 괄호 안에 들어있는 메시지 문자열을 자연수로 바꿔주는 함수
+parsefloat : 뒤에 따라오는 괄호 안에 들어있는 메시지 문자열을 실수로 바꿔주는 함수
+NaN : Not of Numbr 의 약어. 숫자가 아닌경우
+Infinity : 1/0과 같은 수학적 오류가 있는 내용을 출력할경우. 무한을 뜻함
+
+ex) var height = "160.4";
+console.log(height, typeof(height));    // 160.4 string이 출력됩니다.
+
+ex) var height_int = parseInt(height);
+console.log(height_int, typeof(height_int));    // 160 'number'가 출력됩니다.
+
+
+ex) var height_float = parsefloat(height);
+console.log(height_float, typeof(height_float));    // 160.4 'number'가 출력됩니다.
+
+ex) height= "내키는 160.4입니다"
+의 값을 입력하면 nan number가 출력됩니다
+
+
+

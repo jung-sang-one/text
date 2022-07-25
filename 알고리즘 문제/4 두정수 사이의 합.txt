@@ -1,0 +1,11 @@
+function solution(a, b) {
+    var answer = 0;
+    
+    let c = Math.min(a, b);  // a값과 b값중 최소값을 찾아 변수c에 초기화하고
+    let d = Math.max(a, b);  // a값과 b값중 최댓값을 찾아 변수d에 초기화하고
+    
+    for(let i=c; i<=d; i++) answer+=i;  //i를 c와같은 값의 정수부터 d와 작거나 같은수의 정수까지
+                                        //반복해서 1씩 커진값을 배열마다 초기화 하고
+                                        //i의 배열 마다 있는 값을 다 더해서 answer 값으로 초기화한다
+    return answer;
+}

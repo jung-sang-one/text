@@ -1,0 +1,5 @@
+function solution(n) {
+    let num = Math.sqrt(n); n의 제곱근을 구하고
+    if(num % 1 === 0 ) return (num+1) * (num+1) 그제곱근의 나머지가 0일때 정수임으로 +1한제곱을해주고
+    else return -1 아닐때는 -1 을 출력한다
+}

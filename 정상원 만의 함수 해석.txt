@@ -1,0 +1,8 @@
+
+        const a = Number(n[0]), b = Number(n[1]);
+a 의 Number의 n은 [0]이고, b는 Number의 n은 [1]
+for(let i=0; i<b; i++){
+일때의 내용은 i=0; 인데 i는 b보다 작은수 만큼 i를 더할때
+console.log(a)
+}
+a를 출력한다
